@@ -21,7 +21,7 @@ function App() {
     setLoader(true);
     axios
       .get(
-        `http://www.omdbapi.com/?apikey=${apiKey}&page=${pageNumber}&s=${
+        `https://www.omdbapi.com/?apikey=${apiKey}&page=${pageNumber}&s=${
           searchValue?.length > 0 ? searchValue : "kha" 
         }`
       )
