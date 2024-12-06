@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tiflix/static/css/main.7ca6383b.css",
+    "main.js": "/Tiflix/static/js/main.26d64281.js",
+    "static/js/453.e0b47f67.chunk.js": "/Tiflix/static/js/453.e0b47f67.chunk.js",
+    "index.html": "/Tiflix/index.html",
+    "main.7ca6383b.css.map": "/Tiflix/static/css/main.7ca6383b.css.map",
+    "main.26d64281.js.map": "/Tiflix/static/js/main.26d64281.js.map",
+    "453.e0b47f67.chunk.js.map": "/Tiflix/static/js/453.e0b47f67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ca6383b.css",
+    "static/js/main.26d64281.js"
+  ]
+}
