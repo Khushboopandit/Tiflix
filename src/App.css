@@ -3,12 +3,12 @@ body {
 }
 
 /* search inp css */
-.form-control{
+.form-control {
   color: #fff;
-  border:0;
+  border: 0;
   font-size: 26px;
 }
-.form-control:focus{
+.form-control:focus {
   color: #fff;
   box-shadow: none;
 }
@@ -17,25 +17,32 @@ body {
   color: #beb9b9;
 }
 
-.input-group-text{
-  border:0
+.input-group-text {
+  border: 0;
 }
-.input-group{
+.input-group {
   height: 64px;
+}
+.info-text {
+  color: #8b958b;
+  font-size: 14px;
 }
 
 /* Cards css */
-.card{
+.card {
   background-color: #1f1f21;
   color: #fff;
 }
+.card img {
+  height: 240px;
+}
 /* common css */
-.bg-262833{
+.bg-262833 {
   background-color: #262833 !important;
 }
-.text-white{
+.text-white {
   color: #fff;
 }
-.text-7289ad{
-  color:#7289ad
+.text-7289ad {
+  color: #7289ad;
 }
