@@ -1,7 +1,7 @@
 // Material ui icons import
 import SearchIcon from '@mui/icons-material/Search';
 
-function SearchMovie({setSearchValue,searchValue,fetchMovies}) {
+function SearchMovie({setSearchValue,searchValue,handleSearch}) {
   return (
     <div className="mb-5">
       <div className="input-group flex-nowrap">
@@ -12,7 +12,7 @@ function SearchMovie({setSearchValue,searchValue,fetchMovies}) {
           type="text"
           value={searchValue}
           onChange={(e)=>setSearchValue(e.target.value)}
-          onKeyDown={(e)=>e.key === 'Enter' && fetchMovies()}
+          onKeyDown={(e)=>e.key === 'Enter' && handleSearch()}
           className="form-control bg-262833"
           placeholder="Search for movies"
           aria-label="Username"
