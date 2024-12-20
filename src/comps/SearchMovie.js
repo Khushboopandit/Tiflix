@@ -1,7 +1,10 @@
 // Material ui icons import
+import {useContext} from "react"
 import SearchIcon from '@mui/icons-material/Search';
+import { ThemeContext } from '../App';
 
-function SearchMovie({setSearchValue,searchValue,handleSearch}) {
+function SearchMovie() {
+  const { searchValue, setSearchValue,handleSearch } = useContext(ThemeContext);
   return (
     <div className="mb-5">
       <div className="input-group flex-nowrap">

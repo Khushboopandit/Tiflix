@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,createContext } from "react";
 import "./App.css";
 import SearchMovie from "./comps/SearchMovie";
 import MovieCard from "./comps/MovieCard";
 import Loader from "./comps/Loader";
 import axios from "axios";
 
+export const ThemeContext = createContext()
 function App() {
   // API key from environment variables
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -78,15 +79,12 @@ function App() {
   };
 
   return (
+    <ThemeContext.Provider value={{searchValue, setSearchValue,handleSearch,loader}}>
     <div className="container my-5">
       <div className="row">
         {/* Search Component */}
         <div className="col-12">
-          <SearchMovie
-            setSearchValue={setSearchValue}
-            searchValue={searchValue}
-            handleSearch={handleSearch}
-          />
+          <SearchMovie/>
         </div>
         {/* Movie Grid */}
         <div className="col-12">
@@ -100,8 +98,9 @@ function App() {
         </div>
       </div>
       {/* Loading Indicator */}
-      <Loader loader={loader} />
+      <Loader />
     </div>
+    </ThemeContext.Provider>
   );
 }
 
